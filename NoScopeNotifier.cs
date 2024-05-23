@@ -8,7 +8,7 @@ public class NoScopeNotifier : BasePlugin
     public override string ModuleName => "No Scope Notifier [Argentum Module]";
     public override string ModuleDescription => "NoScope Notifier - Extracted from Argentum framework - https://steamcommunity.com/id/kenoxyd";
     public override string ModuleAuthor => "kenoxyd";
-    public override string ModuleVersion => "1.0.0";
+    public override string ModuleVersion => "1.1.0";
 
     public override void Load(bool hotReload)
     { 
@@ -63,7 +63,7 @@ public class NoScopeNotifier : BasePlugin
                     if (@event.Attackerinair) message += (message.Length > 0 ? " " : "") + "while midair";
                 }
 
-                Server.PrintToChatAll($" \x0E• \x04{attacker.PlayerName}\x01 no-scopes {message}, nailing \x04{victim.PlayerName}\x01 from {formattedDistance}\x04 meters!");
+                Server.PrintToChatAll($" \x0E• \x04{attacker.PlayerName}\x01 no-scopes, {message}, nailing \x04{victim.PlayerName}\x01 from {formattedDistance}\x04 meters!");
             }
         }
 
