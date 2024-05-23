@@ -20,7 +20,6 @@ public class NoScopeNotifier : BasePlugin
         var attacker = @event.Attacker;
         var victim = @event.Userid;
 
-        // Early returns for invalid or irrelevant events
         if (victim == null || attacker == null || !@event.Noscope)
         {
             return HookResult.Continue;
@@ -41,7 +40,6 @@ public class NoScopeNotifier : BasePlugin
 
         if (@event.Noscope)
         {
-            // Announce no scope kill without special conditions
             if (!@event.Thrusmoke && !@event.Attackerinair && !@event.Attackerblind)
             {
                 var randomIndex = new Random().Next(noScopeMessages.Count);
