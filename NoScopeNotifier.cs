@@ -6,7 +6,7 @@ namespace NoScopeNotifier;
 public class NoScopeNotifier : BasePlugin
 {
     public override string ModuleName => "No Scope Notifier [Argentum Module]";
-    public override string ModuleDescription => "NoScope Notifier - Extracted from Argentum framework - https://steamcommunity.com/id/kenoxyd";
+    public override string ModuleDescription => "NoScope Notifier - Extracted from Argentum Suite - https://steamcommunity.com/id/kenoxyd";
     public override string ModuleAuthor => "kenoxyd";
     public override string ModuleVersion => "1.1.0";
 
